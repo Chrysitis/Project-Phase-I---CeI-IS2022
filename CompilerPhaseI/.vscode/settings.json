@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "C:/Users/chris/Documents/TEC/2022 - Semestre I/Compiladores E Interpretes/Proyectos/Proyecto I/Project-Phase-I---CeI-IS2022/CompilerPhaseI/lib/java-cup-11b-runtime.jar"
+    ]
+}
