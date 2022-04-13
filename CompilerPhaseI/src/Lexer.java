@@ -36,7 +36,7 @@ class Lexer implements java_cup.runtime.Scanner, sym {
   private static final int [] ZZ_CMAP_TOP = zzUnpackcmap_top();
 
   private static final String ZZ_CMAP_TOP_PACKED_0 =
-    "\1\0\u10ff\u0100";
+    "\1\0\37\u0100\1\u0200\267\u0100\10\u0300\u1020\u0100";
 
   private static int [] zzUnpackcmap_top() {
     int [] result = new int[4352];
@@ -66,10 +66,10 @@ class Lexer implements java_cup.runtime.Scanner, sym {
   private static final String ZZ_CMAP_BLOCKS_PACKED_0 =
     "\40\0\1\1\11\0\1\2\1\3\1\0\1\4\1\1"+
     "\1\5\15\0\1\6\3\0\1\1\30\0\1\1\6\0"+
-    "\1\1\30\0\1\1\u0185\0";
+    "\1\1\30\0\1\1\u0385\0";
 
   private static int [] zzUnpackcmap_blocks() {
-    int [] result = new int[512];
+    int [] result = new int[1024];
     int offset = 0;
     offset = zzUnpackcmap_blocks(ZZ_CMAP_BLOCKS_PACKED_0, offset, result);
     return result;

@@ -24,6 +24,53 @@ import java_cup.runtime.*;
   }
 %}
 
+// ---------- Some type definitions ----------
+sign = -
+zero = 0 | 0.0
+digR = [1 ... 9]
+digs = [0 ... 9]
+decimalPoint =  \. 
+
+// ---------- char ----------
+char = [a...z A...Z]
+
+// ---------- integer ----------
+integer = zero
+integer = sign integer | integer
+integer = digR integerRest
+integerRest = digs intergerRest
+integerRest = digs
+
+// ---------- float ----------
+float = zero
+float = sign preDecimal postDecinmal | preDecimal postDecinmal
+preDecimal = digR preDecimal
+preDecimal = digs preDecimal
+postDecimal = decimalPoint digs
+
+// ---------- boolean ----------
+boolean = TRUE | FALSE
+
+// ---------- identifier ----------
+identifier = char+ ( punctuation | digs ) *
+
+// ---------- constant ----------
+//As in to name a "case" in the case control structure.
+constant = [ char digs ]*
+// ---------- string ----------
+string = char string
+
+// ---------- relational expressions ----------
+relationalOperator = < | <= | > | >= | == | !=
+booleanRelationalOperator = == | !=
+
+// ---------- logical expressions ----------
+logicalOperator = AND | OR | NOT
+// ---------- one/multi line comments ----------
+comment = " // " ( char* | digs* ) comment
+comment = " /* " ( char* | digs* ) comment
+comment = ( char* | digs* ) comment
+comment = " // " | " */ "
 %%
 [a...z A...Z] {System.out.println("Found it");}
 
