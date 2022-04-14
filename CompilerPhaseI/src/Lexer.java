@@ -65,8 +65,8 @@ class Lexer implements java_cup.runtime.Scanner, sym {
 
   private static final String ZZ_CMAP_BLOCKS_PACKED_0 =
     "\40\0\1\1\11\0\1\2\1\3\1\0\1\4\1\1"+
-    "\1\5\15\0\1\6\3\0\1\1\30\0\1\1\6\0"+
-    "\1\1\30\0\1\1\u0385\0";
+    "\1\5\12\0\1\6\2\0\1\7\3\0\1\1\30\0"+
+    "\1\1\6\0\1\1\30\0\1\1\u0385\0";
 
   private static int [] zzUnpackcmap_blocks() {
     int [] result = new int[1024];
@@ -93,10 +93,10 @@ class Lexer implements java_cup.runtime.Scanner, sym {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\1\0\1\1\1\2\1\3\1\4\1\5\1\6";
+    "\1\0\1\1\1\2\1\3\1\4\1\5\1\0\1\6";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[7];
+    int [] result = new int[8];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -121,10 +121,10 @@ class Lexer implements java_cup.runtime.Scanner, sym {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\7\0\7\0\7\0\7\0\7\0\7";
+    "\0\0\0\10\0\10\0\10\0\10\0\10\0\20\0\10";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[7];
+    int [] result = new int[8];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -147,10 +147,11 @@ class Lexer implements java_cup.runtime.Scanner, sym {
   private static final int [] ZZ_TRANS = zzUnpackTrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\0\1\2\1\3\1\4\1\5\1\6\1\7\7\0";
+    "\1\0\1\2\1\3\1\4\1\5\1\6\1\7\20\0"+
+    "\1\10";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[14];
+    int [] result = new int[24];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -193,10 +194,10 @@ class Lexer implements java_cup.runtime.Scanner, sym {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\1\0\6\11";
+    "\1\0\5\11\1\0\1\11";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[7];
+    int [] result = new int[8];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;

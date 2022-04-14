@@ -71,12 +71,12 @@ comment = " // " ( char* | digs* ) comment
 comment = " /* " ( char* | digs* ) comment
 comment = ( char* | digs* ) comment
 comment = " // " | " */ "
-%%
-[a...z A...Z] {System.out.println("Found it");}
 
+%%
 /* Lexical rules */
-"=" {return symbol(sym.TERMINAL, "=");}
+":=" {return symbol(sym.TERMINAL, "=");}
 "+" {return symbol(sym.TERMINAL, "+");}
 "-" {return symbol(sym.TERMINAL, "-");}
 "*" {return symbol(sym.TERMINAL, "*");}
 "/" {return symbol(sym.TERMINAL, "/");}
+[a...z A...Z] {System.out.println("Found it");}
